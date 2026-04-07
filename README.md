@@ -1,5 +1,5 @@
 # BaitapFinalchuong3
-Course Management System (CMS) - Laravel Project
+📚 Course Management System (CMS) - Laravel Project
 Dự án Xây dựng hệ thống quản lý khóa học trực tuyến sử dụng Laravel Framework. Hệ thống cho phép quản lý nội dung khóa học, bài học và theo dõi học viên đăng ký với giao diện Dashboard trực quan.
 
 🚀 Chức năng chính
