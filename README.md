@@ -30,6 +30,65 @@ CRUD đầy đủ: Thêm, sửa, xóa và xem danh sách khóa học.
 Backend: Laravel 12.x, PHP 8.2
 
 Database: MySQL
+📚 Course Management System (CMS) - Laravel Project
+Dự án Xây dựng hệ thống quản lý khóa học trực tuyến. Hệ thống cho phép quản lý nội dung khóa học, bài học và thống kê doanh thu, học viên trên Dashboard.
+
+🛠 Hướng dẫn cài đặt và chạy dự án
+Để chạy dự án này trên máy cục bộ (Localhost), Hieu hãy thực hiện theo các bước sau:
+
+1. Chuẩn bị môi trường
+PHP: >= 8.2
+
+Composer: Phiên bản mới nhất
+
+Database: MySQL (XAMPP hoặc Laragon)
+
+Server: Apache hoặc Nginx
+
+2. Các bước cài đặt
+Bước 1: Clone dự án từ GitHub
+
+Bash
+git clone https://github.com/Hieunoob/Baitapthuchanhchuong3_2.git
+cd Baitapthuchanhchuong3_2
+Bước 2: Cài đặt các thư viện PHP (Vendor)
+
+Bash
+composer install
+Bước 3: Cấu hình file môi trường (.env)
+
+Tạo file .env từ file mẫu:
+
+Bash
+cp .env.example .env
+Mở file .env lên và cấu hình thông tin Database:
+
+Đoạn mã
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=ten_database
+DB_USERNAME=root
+DB_PASSWORD=
+Bước 4: Tạo App Key
+
+Bash
+php artisan key:generate
+Bước 5: Chạy Migration để tạo bảng dữ liệu
+
+Bash
+php artisan migrate
+Bước 6: Tạo liên kết thư mục Storage (Để hiện ảnh khóa học)
+
+Lưu ý: Bước này cực kỳ quan trọng để các ảnh Hieu upload trong Admin hiện ra được ở Dashboard.
+
+Bash
+php artisan storage:link
+Bước 7: Khởi động Server
+
+Bash
+php artisan serve
+Sau đó,truy cập: http://127.0.0.1:8000/dashboard
 
 Frontend: Blade Template, Bootstrap 5, FontAwesome (Icons)
 
